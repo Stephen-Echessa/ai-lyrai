@@ -1,6 +1,5 @@
 fastapi
-uvicorn[standard]
-gunicorn
+uvicorn
 langgraph
 langchain
 langchain-community
