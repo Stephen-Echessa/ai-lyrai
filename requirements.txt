@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+langgraph
+langchain
+langchain-community
+langchain-google-genai
+langchain-nvidia-ai-endpoints
+langgraph-checkpoint-sqlite
+langgraph-checkpoint
+python-dotenv
+faiss-cpu
+spotipy
+lyricsgenius
