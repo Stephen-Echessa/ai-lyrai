@@ -112,7 +112,7 @@ def _search_genius_for_spotify_track(song_name: str, artist_name: str):
 
         return song
         
-    except Exception:
+    except Exception as e:
         print("[tools debug] _search_genius_for_spotify_track -> exception during genius search for", song_name, artist_name, "\n")
         return None
 
