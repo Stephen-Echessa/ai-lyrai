@@ -20,16 +20,6 @@ genius = Genius(genius_token)
 genius.skip_non_songs = True
 genius.excluded_terms = ["(Remix)", "(Live)", "(Acoustic)"]
 
-# Override the session headers to look like a real browser
-genius.session.headers.update({
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.5",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Connection": "keep-alive",
-    "Referer": "https://genius.com/",
-})
-
 
 def _parse_spotify_track_id(song_url: str) -> str:
     if song_url.startswith("spotify:track:"):
